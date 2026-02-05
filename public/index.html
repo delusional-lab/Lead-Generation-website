@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeadLift - Conversion-Optimized Lead Generation</title>
+  <meta name="description" content="Capture high-quality leads with a fast, secure, local-first lead generation platform." />
+  <meta name="keywords" content="lead generation, conversion optimization, B2B, SaaS" />
+  <meta property="og:title" content="LeadLift - High-Intent Leads" />
+  <meta property="og:description" content="Multi-step forms, scoring, and analytics that run entirely locally." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "LeadLift",
+      "url": "http://localhost:3000",
+      "potentialAction": {
+        "@type": "RegisterAction",
+        "target": "http://localhost:3000",
+        "name": "Request a Growth Plan"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">LeadLift</div>
+    <nav>
+      <a href="#benefits">Benefits</a>
+      <a href="#proof">Social Proof</a>
+      <a href="#form">Get Started</a>
+      <a href="/admin" class="button ghost">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <p class="eyebrow">Local-First • Secure • Scalable</p>
+        <h1 id="heroHeadline">Turn Anonymous Visitors into High-Intent Leads in 7 Minutes</h1>
+        <p class="subhead" id="heroSubhead">
+          A conversion-optimized intake experience that qualifies, scores, and routes your best leads—100% offline-ready.
+        </p>
+        <div class="cta-row">
+          <button class="button primary" id="primaryCta">Claim My Growth Plan</button>
+          <button class="button secondary" id="secondaryCta">See the 3-Step Process</button>
+        </div>
+        <div class="urgency" id="urgencyBanner">
+          <strong>Limited:</strong> Only 12 onboarding spots this month. Reserve yours now.
+        </div>
+        <div class="trust-bar">
+          <div>
+            <span class="metric">92%</span>
+            <span class="label">Qualification Accuracy</span>
+          </div>
+          <div>
+            <span class="metric">3.4x</span>
+            <span class="label">Lead-to-Call Lift</span>
+          </div>
+          <div>
+            <span class="metric">24 hrs</span>
+            <span class="label">Average Response Time</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Instant Growth Snapshot</h3>
+        <ul>
+          <li>Funnel drop-off diagnostics</li>
+          <li>Behavioral lead scoring</li>
+          <li>AI-guided follow-up scripts</li>
+        </ul>
+        <div class="hero-cta">
+          <button class="button primary" data-scroll="#form">Start the 3-Minute Audit</button>
+          <p class="micro">No credit card • Runs locally</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <h2>Built for Conversion-First Teams</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Multi-step qualification</h3>
+          <p>Progressively reveal questions, reduce friction, and capture intent signals at every step.</p>
+        </div>
+        <div class="card">
+          <h3>Behavioral intelligence</h3>
+          <p>Track scroll depth, CTA clicks, form abandonment, and time-on-page to score leads accurately.</p>
+        </div>
+        <div class="card">
+          <h3>Local analytics dashboard</h3>
+          <p>Monitor funnel conversion, hot lead volume, and engagement without any external services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof" id="proof">
+      <h2>Trusted Growth Outcomes (Placeholder)</h2>
+      <div class="proof-grid">
+        <div class="proof-card">
+          <p>"We doubled qualified demos in under 30 days."</p>
+          <span>— SaaS Operations Lead</span>
+        </div>
+        <div class="proof-card">
+          <p>"The scoring model helped sales focus on the right leads."</p>
+          <span>— Agency Founder</span>
+        </div>
+        <div class="proof-card">
+          <p>"Our intake completion rate jumped from 38% to 64%."</p>
+          <span>— Local Services Director</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section form-section" id="form">
+      <div class="form-header">
+        <div>
+          <h2>Request Your Custom Growth Plan</h2>
+          <p>Answer a few quick questions. We will personalize your growth blueprint instantly.</p>
+        </div>
+        <div class="progress">
+          <span id="progressText">Step 1 of 3</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+      </div>
+
+      <form id="leadForm" novalidate>
+        <div class="form-step active" data-step="1">
+          <div class="field">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <small class="error" data-error-for="firstName"></small>
+          </div>
+          <div class="field">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" required />
+            <small class="error" data-error-for="lastName"></small>
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" required />
+            <small class="error" data-error-for="email"></small>
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" required />
+            <small class="error" data-error-for="company"></small>
+          </div>
+        </div>
+
+        <div class="form-step" data-step="2">
+          <div class="field">
+            <label for="role">Role</label>
+            <input type="text" id="role" name="role" required />
+            <small class="error" data-error-for="role"></small>
+          </div>
+          <div class="field">
+            <label for="niche">Business type</label>
+            <select id="niche" name="niche" required>
+              <option value="">Select...</option>
+              <option value="B2B SaaS">B2B SaaS</option>
+              <option value="Services">Services</option>
+              <option value="Local Business">Local Business</option>
+              <option value="Ecommerce">Ecommerce</option>
+            </select>
+            <small class="error" data-error-for="niche"></small>
+          </div>
+          <div class="field conditional" id="websiteField">
+            <label for="website">Website (optional)</label>
+            <input type="url" id="website" name="website" />
+          </div>
+          <div class="field">
+            <label for="painPoint">Biggest growth blocker</label>
+            <select id="painPoint" name="painPoint" required>
+              <option value="">Select...</option>
+              <option value="Low lead quality">Low lead quality</option>
+              <option value="Low conversion rate">Low conversion rate</option>
+              <option value="Long sales cycles">Long sales cycles</option>
+              <option value="Poor follow-up">Poor follow-up</option>
+            </select>
+            <small class="error" data-error-for="painPoint"></small>
+          </div>
+        </div>
+
+        <div class="form-step" data-step="3">
+          <div class="field">
+            <label for="budget">Monthly budget range</label>
+            <select id="budget" name="budget" required>
+              <option value="">Select...</option>
+              <option value="$1k-$2k">$1k-$2k</option>
+              <option value="$2k-$5k">$2k-$5k</option>
+              <option value="$5k-$10k">$5k-$10k</option>
+              <option value="$10k+">$10k+</option>
+            </select>
+            <small class="error" data-error-for="budget"></small>
+          </div>
+          <div class="field">
+            <label for="timeline">Timeline to launch</label>
+            <select id="timeline" name="timeline" required>
+              <option value="">Select...</option>
+              <option value="ASAP">ASAP</option>
+              <option value="14 days">14 days</option>
+              <option value="30 days">30 days</option>
+              <option value="90 days">90 days</option>
+            </select>
+            <small class="error" data-error-for="timeline"></small>
+          </div>
+          <div class="field">
+            <label for="goals">Top growth goal</label>
+            <textarea id="goals" name="goals" rows="4" required></textarea>
+            <small class="error" data-error-for="goals"></small>
+          </div>
+          <div class="ai-box" id="aiSuggestion">
+            <strong>AI Suggestion:</strong>
+            <span>Answer a few fields to unlock suggestions.</span>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="button ghost" id="prevBtn">Back</button>
+          <button type="button" class="button secondary" id="saveBtn">Save & Continue Later</button>
+          <button type="submit" class="button primary" id="nextBtn">Next</button>
+        </div>
+      </form>
+      <div class="form-success" id="successMessage">
+        <h3>Success! Your growth plan is being generated.</h3>
+        <p>We will reach out within 24 hours with a tailored strategy and next steps.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>LeadLift &copy; 2025. Built to run locally with privacy-first analytics.</p>
+  </footer>
+
+  <div class="exit-modal" id="exitModal" aria-hidden="true">
+    <div class="exit-content">
+      <h3>Wait! Want the 5-Minute Growth Checklist?</h3>
+      <p>Leave your email and we will send the checklist instantly.</p>
+      <input type="email" id="exitEmail" placeholder="you@company.com" />
+      <div class="exit-actions">
+        <button class="button primary" id="exitSubmit">Send it</button>
+        <button class="button ghost" id="exitClose">No thanks</button>
+      </div>
+      <small class="micro">Local-only storage. No email is sent externally.</small>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

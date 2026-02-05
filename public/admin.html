@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeadLift Admin Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="admin-header">
+    <h1>LeadLift Admin Dashboard</h1>
+    <p>Monitor lead quality, funnel health, and conversion performance locally.</p>
+  </header>
+
+  <main class="section">
+    <section class="admin-grid" id="metrics"></section>
+
+    <section class="section">
+      <h2>Funnel Performance</h2>
+      <div class="admin-grid" id="funnel"></div>
+    </section>
+
+    <section class="section">
+      <div class="cta-row">
+        <button class="button primary" id="exportBtn">Export CSV</button>
+        <a href="/" class="button ghost">Back to site</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Latest Leads</h2>
+      <table class="table" id="leadsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th>Score</th>
+            <th>Temperature</th>
+            <th>Created</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
